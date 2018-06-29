@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+em,
+i {
+  font-style: normal;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+body {
+  background-color: #f1f1f1;
+}
+.header {
+  width: 100%;
+  height: .93rem;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.header .logo {
+  width: 75%;
+  float: left;
+  margin-left: .09rem;
+  padding: .22rem;
+}
+.header .logo img {
+  display: block;
+  width: 3.43rem;
+  height: .46rem;
+}
+.header .appDown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .11rem;
+}
+.header .appDown img {
+  display: block;
+  width: .63rem;
+  height: .63rem;
+}
+.mm_search {
+  background-color: #fff;
+  padding: 10px;
+}
+.mm_search .search {
+  padding-right: 70px;
+  position: relative;
+}
+.mm_search .search input:first-child {
+  height: 30px;
+  outline: none;
+  background-color: #f1f1f1;
+  line-height: 30px;
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 13px;
+  padding-right: 50px;
+  padding-left: 20px;
+}
+.mm_search .search input:last-child {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 63px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ff841d;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+}
+.mm_footer .footer_header {
+  background-color: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: .63rem;
+  line-height: .63rem;
+  margin-top: .46rem;
+}
+.mm_footer .footer_header a {
+  float: left;
+  color: #000;
+  box-sizing: border-box;
+  width: 30%;
+  border-right: 1px solid #c4c4c4;
+  font-size: .26rem;
+  text-align: center;
+}
+.mm_footer .footer_fot {
+  background-color: #efefef;
+  text-align: center;
+  font-size: .22rem;
+  color: #666;
+  padding: .28rem 0;
+}
+.mm_footer .footer_fot .fot {
+  color: red;
+}
+.product_bar {
+  text-align: center;
+  width: 100%;
+}
+.product_bar a {
+  display: block;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  font-size: .24rem;
+  line-height: .56rem;
+  background-image: linear-gradient(#fff, #f4f4f4);
+  border-radius: .07rem;
+  margin: .19rem;
+}

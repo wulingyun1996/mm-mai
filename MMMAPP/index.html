@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买-首页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="appDown">
+      <a href="javascript:;" title="手机APP下载">
+        <img src="images/header_app.png" alt="手机APP下载">
+      </a>
+    </div>
+  </header>
+
+  <!-- 搜索框 -->
+  <div class="mm_search">
+    <form class="search">
+      <input type="search" placeholder="请输入你想要购买的商品">
+      <input type="button" value="搜索">
+
+    </form>
+  </div>
+  <!-- 导航栏 -->
+  <div class="mm_nav">
+    <ul class="clearfix">
+      <!-- ===坑==== -->
+    </ul>
+  </div>
+  <div class="mm_title">
+    <span>超值折扣推荐</span>
+    <img src="http://www.zuyushop.com/wap/images/more.png" >
+  </div>
+  <div class="mm_product">
+    <ul>
+     <!-- =====坑==== -->
+    </ul>
+    <div class="product_bar">
+      <a href="moneyctrl.html">更多优惠信息 »</a>
+    </div>
+  </div>
+  <div class="mm_title">
+    <span>品牌排行</span>
+    <img src="http://www.zuyushop.com/wap/images/more.png" >
+  </div>
+
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15" >返回顶部
+      </a>
+    </div> 
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot" >手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div> 
+  </div>
+
+  <script type="text/html" id="tpl">
+  {{each result v i}}
+    <li class="{{i==7?"emid":""}}">
+      <a href="{{v.titlehref}}">
+        <%-v.img%>
+        <p>{{v.name}}</p>
+      </a>
+    </li>
+  {{/each}}
+  </script>
+  <script type="text/html" id="tpl2">
+  {{each result v i}}
+    <li class="clearfix">
+      <a href="moneyproduct.html?productid={{v.productId}}">
+        <div class="price">
+        <%- v.productImgSm%>
+        </div>
+        <div class="info">
+          <div class="info_header">
+            {{v.productName}}
+            <span>{{v.productPinkage}}</span>
+          </div>
+          <div class="info_fot clearfix">
+            <span class="mall">{{v.productFrom}} | {{v.productTime}}</span>
+            <span class="icon">
+              <i class="icon-comment"></i>
+              {{v.productComCount.replace("有","").replace("人评论","")}}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  
+  {{/each}}
+  
+  </script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

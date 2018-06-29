@@ -1,0 +1,190 @@
+.money_header {
+  height: 0.81rem;
+  width: 100%;
+  background-color: #f4483e;
+  color: #fff;
+  position: relative;
+}
+.money_header .money_title {
+  height: 0.81rem;
+  margin: 0 0.81rem;
+  text-align: center;
+  line-height: 0.81rem;
+  font-size: 0.37rem;
+}
+.money_header .money_left {
+  width: 0.93rem;
+  height: 0.81rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.money_header .money_left .icon-back {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.money_header .money_right {
+  width: 0.93rem;
+  height: 0.81rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+.money_header .money_right .icon-app {
+  background-image: url(http://m.manmanbuy.com/images/header_app.png);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.56rem;
+}
+body {
+  background-color: #fff;
+}
+.coupon_info {
+  font-size: 12px;
+  margin: 0.15rem 0;
+  color: #999999;
+  text-align: center;
+}
+.coupon_product {
+  background-color: #fff;
+}
+.coupon_product a.gotop {
+  position: fixed;
+  bottom: 0.56rem;
+  right: 0.15rem;
+  width: 0.74rem;
+  text-align: center;
+  line-height: 0.74rem;
+  font-size: 30px;
+  z-index: 999;
+  height: 0.74rem;
+  border-radius: 0.37rem;
+  opacity: 0.5;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 22px auto;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17' height='17'><path fill='#565656' d='M888.890368 434.863104 524.079104 69.685248c-3.62496-3.62496-8.512512-5.63712-13.600768-5.63712-5.08928 0-9.976832 2.01216-13.601792 5.63712L132.06528 434.863104c-16.028672 16.04608-15.031296 42.750976 0.9984 58.76224 15.962112 15.962112 41.76896 16.096256 57.831424 0.050176l277.981184-277.998592 0 604.1344c0 22.694912 18.390016 40.886272 40.971264 40.886272 22.612992 0 42.233856-18.19136 42.233856-40.886272L552.081408 215.676928l277.983232 277.998592c16.06144 16.045056 41.867264 15.911936 57.8304-0.050176C903.921664 477.613056 904.91904 450.909184 888.890368 434.863104z' transform='translate(0, 0)'/></svg>");
+}
+.coupon_product li {
+  border-bottom: 1px solid #e7e7e7;
+  background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'><path fill='#999999' d='M746.255255 299.653099 746.33098 299.728824 713.12674 332.933063 713.049992 332.857339 297.859875 748.048479 264.635169 714.82275 679.816077 299.642866 264.635169-115.538041 297.859875-148.762747 713.00906 266.386438 713.085808 266.30969 746.341213 299.567141Z' transform='translate(0, 812) scale(1, -1)'/></svg>") right center no-repeat;
+  background-size: 0.37rem 0.37rem;
+  position: relative;
+  overflow: hidden;
+}
+.coupon_product li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0.19rem;
+  box-sizing: content-box;
+}
+.coupon_product li .coupon_img {
+  float: left;
+  width: 1.85rem;
+  height: 1.48rem;
+  margin-right: 0.19rem;
+  overflow: hidden;
+}
+.coupon_product li .coupon_img img {
+  width: 1.85rem;
+  height: auto;
+}
+.coupon_product li .coupon_banner {
+  padding-right: 0.56rem;
+  overflow: hidden;
+}
+.coupon_product li .coupon_banner .info_top h3 {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.37rem;
+}
+.coupon_product li .coupon_banner .info_top h2 {
+  font-size: 14px;
+  margin-top: 0.06rem;
+  color: red;
+}
+.coupon_product li .coupon_banner .info_time {
+  font-size: 12px;
+  color: #ee7700;
+  margin-top: 0.19rem;
+}
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.mask .mask_banner {
+  width: 200px;
+  height: 160px;
+  overflow: hidden;
+  margin: 200px auto;
+  position: relative;
+}
+.mask .mask_banner ul {
+  width: 2000px;
+  position: absolute;
+  height: 160px;
+}
+.mask .mask_banner ul li {
+  float: left;
+}
+.mask .mask_banner .arrow .arrow-left,
+.mask .mask_banner .arrow .arrow-right {
+  font-family: "SimSun", "宋体";
+  width: 30px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+}
+.mask .mask_banner .arrow .arrow-left {
+  left: -50px;
+}
+.mask .mask_banner .arrow .arrow-right {
+  right: -50px;
+}
+.mask .mask_banner ol {
+  width: 120px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mask .mask_banner ol li {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  float: left;
+  margin: 0 5px;
+}
+.mask .mask_banner ol li.now {
+  background-color: #fff;
+}
+.mask.show {
+  display: block;
+}

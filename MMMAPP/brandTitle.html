@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买- 品牌排行</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/brandTitle.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="appDown">
+      <a href="javascript:;" title="手机APP下载">
+        <img src="images/header_app.png" alt="手机APP下载">
+      </a>
+    </div>
+  </header>
+
+  <!-- 搜索框 -->
+  <div class="mm_search">
+    <form class="search">
+      <input type="search" placeholder="请输入你想要购买的商品">
+      <input type="button" value="搜索">
+
+    </form>
+  </div>
+
+  <div class="list_nav">
+      <a href="index.html">首页</a>
+      >
+      <a href="category.html">全部分类</a>
+      >
+    </div>
+  
+
+    <div class="title_brand">
+      热门品牌排行
+    </div>
+
+    <div class="title_list clearfix">
+      <ul>
+        
+      </ul>
+    </div>
+
+
+
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15" >返回顶部
+      </a>
+    </div> 
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot" >手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div> 
+  </div>
+
+<script type="text/html" id="tpl">
+
+{{each result v i }}
+
+<li>
+    <a href="brand.html?brandtitleid={{v.brandTitleId}}" data-title-id="0" >{{v.brandTitle}}</a>
+</li>
+
+{{/each}}
+</script>
+  
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/brandTitle.js"></script>
+</body>
+
+</html>

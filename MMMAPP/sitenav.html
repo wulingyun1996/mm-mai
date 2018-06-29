@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买-导航区域</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sitenav.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+
+  <div class="money_header">
+    <div class="money_left">
+      <a href="index.html" class="icon-back"></a>
+    </div>
+    <div class="money_title">
+      <h4>商品导航</h4>
+    </div>
+    <div class="money_right">
+      <a href="javascript:;" class="icon-app"></a>
+    </div>
+  </div>
+
+
+  <div class="sitenav_list clearfix">
+
+  </div>
+
+  
+
+
+  
+
+
+
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+
+<script type="text/html" id="tpl">
+
+{{each result v i }}
+  <a href="{{v.navHref}}" target="_blank">
+    <img src="{{v.navImg}}" alt="">
+     {{v.navTitle}}
+  </a>
+
+{{/each}}
+</script>
+ 
+ 
+
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/sitenav.js"></script>
+</body>
+
+</html>

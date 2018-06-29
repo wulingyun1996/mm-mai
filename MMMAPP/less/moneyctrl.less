@@ -1,0 +1,150 @@
+.money_header {
+  height: .81rem;
+  width: 100%;
+  background-color: #ff841d;
+  color: #fff;
+  position: relative;
+  .money_title {
+    height: .81rem;
+    // overflow: hidden;
+    margin: 0 .81rem;
+    text-align: center;
+    line-height: .81rem;
+    font-size: .37rem;
+  }
+  .money_left {
+    width: .93rem;
+    height: .81rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    // background-color: #0f0;
+    .icon-back {
+      background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .money_right {
+    width: .93rem;
+    height: .81rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    // background-color: #f00;
+    text-align: center;
+    .icon-app {
+      background-image: url(http://m.manmanbuy.com/images/header_app.png);
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: .56rem;
+    }
+  }
+}
+
+
+
+.mm_product {
+  background-color: #fff;
+  max-width: 960px;
+  text-align: left;
+  li {
+    padding: 0.26rem 0.15rem;
+    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    .price {
+      width: 1.85rem;
+      float: left;
+      img {
+        width: 1.85rem;
+        height: 1.85rem;
+      }
+    }
+    .info {
+      // background-color: #0f0;
+      height: 30px;
+      padding-left: 1.85rem;
+      margin-left: .19rem;
+      font-size: .28rem;
+      font-weight: 400;
+      .info_header {
+        color: #333;
+        font-size: 0.28rem;
+        text-align: left;
+        min-height: 1.06rem;
+        line-height: 0.35rem;
+        span {
+          color: #ff6c00;
+        }
+      }
+      .info_fot {
+        color: #a1a1a1;
+        font-size: 0.22rem;
+        margin-top: 0.15rem;
+        span {
+          float: left;
+          color: #a1a1a1;
+          font-size: 0.22rem;
+        }
+        .icon {
+          float: right;
+          color: #a1a1a1;
+          font-size: 0.22rem;
+          .icon-comment {
+            width: .26rem;
+            height: .28rem;
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+            margin-right: .07rem;
+            background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17'><path fill='#a1a1a1' d='M924.504962 664.898711 97.819886 664.898711c-17.557888 0-31.795147-14.241352-31.795147-31.795147l0-508.732583c0-17.557888 14.238282-31.792077 31.795147-31.792077l241.198387 0 149.664671-149.661601c6.209422-6.212492 14.34266-9.31618 22.478967-9.31618s16.269545 3.102664 22.479991 9.31618L683.306574 92.57788l241.198387 0c17.557888 0 31.795147 14.235213 31.795147 31.792077L956.300109 633.10254C956.300109 650.657358 942.061826 664.898711 924.504962 664.898711zM892.708791 156.169197l-222.569098 0c-8.428973 0-16.518209-3.354398-22.478967-9.31618l-136.498814-136.494721-136.498814 136.494721c-5.961782 5.961782-14.051017 9.31618-22.479991 9.31618l-222.569098 0L129.61401 601.304324l763.093758 0L892.707768 156.169197zM288.592814 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM511.161912 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0ZM733.73101 378.735226m-63.591317 0a62.143 62.143 0 1 0 127.182634 0 62.143 62.143 0 1 0-127.182634 0Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+.product_page {
+  text-align: center;
+  margin-top: .19rem;
+  span {
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    button {
+      box-sizing: border-box;
+      background-color: #d4d4d4;
+      background-image: linear-gradient(#f1f1f1,#d4d4d4);
+      box-shadow: 0 0 1px #666;
+      // border-bottom: 1px solid #bababa;
+      border-radius: .09rem;
+      line-height: .42rem;
+      font-size: .26rem;
+      text-align: center;
+      padding: .06rem .25rem;
+      overflow: hidden;
+    }
+   
+  }
+  #selectPage {
+    padding: .15rem .28rem;
+    border: 1px solid #bababa;
+    font-size: .3rem;
+    height: .67rem;
+    outline: none;
+    vertical-align: middle;
+  }
+}

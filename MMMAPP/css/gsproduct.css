@@ -1,0 +1,193 @@
+.money_header {
+  height: 0.81rem;
+  width: 100%;
+  background-color: #ff841d;
+  color: #fff;
+  position: relative;
+}
+.money_header .money_title {
+  height: 0.81rem;
+  margin: 0 0.81rem;
+  text-align: center;
+  line-height: 0.81rem;
+  font-size: 0.37rem;
+}
+.money_header .money_left {
+  width: 0.93rem;
+  height: 0.81rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.money_header .money_left .icon-back {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='1.5em' height='1.5em'><path fill='#FFFFFF' d='M818.881422 747.988622 755.734756 812 313.503289 363.943111 313.480533 363.965867 250.311111 299.931733 755.734756-212.113778 818.881422-148.1024 376.672711 299.954489Z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.money_header .money_right {
+  width: 0.93rem;
+  height: 0.81rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+.money_header .money_right .icon-app {
+  background-image: url(http://m.manmanbuy.com/images/header_app.png);
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.56rem;
+}
+.gsproduct_list {
+  background-color: #fff;
+}
+.gsproduct_list .list_header {
+  height: 0.7rem;
+  position: relative;
+}
+.gsproduct_list .list_header .title {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #dadada;
+}
+.gsproduct_list .list_header .title ul {
+  width: 100%;
+}
+.gsproduct_list .list_header .title ul li {
+  float: left;
+  width: 33.33%;
+  line-height: 0.69rem;
+  position: relative;
+  box-sizing: border-box;
+}
+.gsproduct_list .list_header .title ul li a {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+}
+.gsproduct_list .list_header .title ul li a span {
+  font-size: 12px;
+}
+.gsproduct_list .list_header .title ul li i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17' height='17'><path fill='#565656' d='M277.44 194.72 528.213333 445.386667 778.88 194.72Z' transform='translate(0, 812) scale(1, -1)'/></svg>") center center no-repeat;
+  color: #fff;
+  background-size: 22px 22px;
+}
+.gsproduct_list .list_header .title ul li i.now {
+  background: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17' height='17'><path fill='#565656' d='M778.88 445.386667 528.106667 194.72 277.44 445.386667Z' transform='translate(0, 812) scale(1, -1)'/></svg>") center center no-repeat;
+}
+.gsproduct_list .list_header .bcj_search {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #fbfbfb;
+  border-left: 1px solid #e6e6e6;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.gsproduct_list .list_header .bcj_search .icon-search {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024' width='17' height='17'><path fill='#565656' d='M978.261333 430.321067c0 157.2864-127.488 284.808533-284.8768 284.808533-157.218133 0-284.706133-127.488-284.706133-284.808533s127.488-284.7744 284.706133-284.7744c22.254933 0 43.793067 2.798933 64.648533 7.68l63.2832-192.136533c3.208533-9.352533 14.916267-14.062933 26.248533-10.410667 11.298133 3.720533 17.8176 14.5408 14.848 23.8592l-63.249067 191.488C904.055467 208.078933 978.261333 310.4448 978.261333 430.321067zM693.384533 184.834133c-135.5776 0-245.384533 109.909333-245.384533 245.521067 0 135.611733 109.943467 245.486933 245.384533 245.486933 135.68 0 245.521067-109.909333 245.521067-245.486933C938.939733 294.7776 829.064533 184.834133 693.384533 184.834133zM366.4896 683.863467l-18.261333 0L98.6112 683.863467c-12.049067 0-21.8112-9.762133-21.8112-21.777067 0-12.049067 9.762133-21.8112 21.8112-21.8112l249.617067 0 5.461333 0c9.147733 15.189333 19.114667 29.832533 30.139733 43.588267L366.4896 683.863467zM297.7792 457.866667 277.6064 457.866667 98.6112 457.866667c-12.049067 0-21.8112-9.762133-21.8112-21.777067 0-12.0832 9.762133-21.8112 21.8112-21.8112l176.708267 0c0 0 0 0 0 0.034133l22.459733 0c-0.4096 7.236267-1.092267 14.404267-1.092267 21.777067S297.3696 450.6304 297.7792 457.866667zM348.2624 231.869867 326.3488 231.869867 98.6112 231.869867c-12.049067 0-21.8112-9.659733-21.8112-21.8112 0-12.0832 9.762133-21.742933 21.8112-21.742933l249.617067 0 5.973333 0 12.288 0 17.339733 0c-11.025067 13.755733-20.923733 28.3648-30.071467 43.52L348.2624 231.835733zM605.3888 5.975467l-127.0784 0-122.538667 0L337.544533 5.975467 87.927467 5.975467c-12.049067 0-21.8112-9.762133-21.8112-21.845333 0-12.0832 9.762133-21.879467 21.8112-21.879467l249.617067 0 18.261333 0 122.538667 0 127.044267 0 78.711467 0-16.0768 43.6224L605.3888 5.975467z' transform='translate(0, 812) scale(1, -1)'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 22px auto;
+}
+.gsproduct_list .list_header .pobox {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  background-color: #fff;
+  box-shadow: 0 3px 6px #dddddd;
+  display: none;
+}
+.gsproduct_list .list_header .pobox li {
+  -webkit-border-image: url("data:image/gif;base64,R0lGODlhBAAEAIABANra2v///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4zLWMwMTEgNjYuMTQ1NjYxLCAyMDEyLzAyLzA2LTE0OjU2OjI3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAxODAxMTc0MDcyMDY4MTE4MDgzOEM2RDA0Mzc2M0VFIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjMwRjkyQUYwNzE2QzExRTQ5NzcwRDk2QTFCMDE4OTczIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjMwRjkyQUVGNzE2QzExRTQ5NzcwRDk2QTFCMDE4OTczIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGODdGMTE3NDA3MjA2ODExODA4M0FBQjZBNjA2MjkxNSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExODA4MzhDNkQwNDM3NjNFRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAEALAAAAAAEAAQAAAIFhBGpeVAAOw==") 2 0 stretch;
+  border-bottom: 1px solid #dadada;
+  border-width: 0 0 1px 0;
+}
+.gsproduct_list .list_header .pobox li a {
+  display: block;
+  padding: 0 0.19rem;
+  line-height: 0.74rem;
+  font-size: 16px;
+}
+.gsproduct_list .list_header .shop.on {
+  display: block;
+}
+.gsproduct_list .list_header .area.on {
+  display: block;
+}
+.gsproduct_list .list_header .price.on {
+  display: block;
+}
+.gsproduct_list .list_banner {
+  background-color: #f1f1f1;
+  padding: 6px 0;
+}
+.gsproduct_list .list_banner ul {
+  width: 98%;
+  margin: 0 auto;
+}
+.gsproduct_list .list_banner ul li {
+  float: left;
+  width: 50%;
+}
+.gsproduct_list .list_banner ul li a {
+  display: block;
+  background-color: #fff;
+  margin: 0.07rem;
+}
+.gsproduct_list .list_banner ul li a .price {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.gsproduct_list .list_banner ul li a .price img {
+  width: 3.22rem;
+  height: 3.22rem;
+}
+.gsproduct_list .list_banner ul li a .title {
+  color: #333333;
+  padding: 0 0.11rem;
+  height: 0.26rem;
+  overflow: hidden;
+  font-size: 0.22rem;
+  margin-top: 0.19rem;
+  line-height: 0.26rem;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 0.11rem;
+}
+.gsproduct_list .list_banner ul li a .other {
+  padding: 0.11rem;
+}
+.gsproduct_list .list_banner ul li a .other .price_two {
+  float: left;
+  color: #f8601d;
+  font-size: 20px;
+}
+.gsproduct_list .list_banner ul li a .other .btn {
+  float: right;
+  font-size: 14px;
+  color: #FFFFFF;
+  border-radius: .06rem;
+  background-color: #ff9501;
+  padding: .07rem .19rem;
+  text-decoration: none;
+}

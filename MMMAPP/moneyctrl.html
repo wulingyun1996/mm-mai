@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买-省钱控</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+  
+  <div class="money_header">
+    <div class="money_left">
+        <a href="index.html" class="icon-back"></a>
+    </div>
+    <div class="money_title">
+      <h4>省钱控-最新优惠</h4>
+    </div>
+    <div class="money_right">
+        <a href="javascript:;" class="icon-app"></a>
+    </div>
+  </div>
+
+  
+  
+ 
+  <div class="mm_product">
+    <ul>
+     <!-- =====坑==== -->
+    </ul>
+    <div class="product_page clearfix">
+        <span>
+           <button class="prev">上一页</button>
+        </span>
+        <span>
+          <select id="selectPage" name="select" selected="">
+            
+          </select>
+        </span>
+        <span>
+        <button class="next">下一页</button>
+        </span>
+      </div>
+  </div>
+ 
+
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15" >返回顶部
+      </a>
+    </div> 
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot" >手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div> 
+  </div>
+
+ 
+  <script type="text/html" id="tpl">
+  {{each result v i}}
+    <li class="clearfix">
+      <a href="moneyproduct.html?productid={{v.productId}}">
+        <div class="price">
+        <%- v.productImgSm%>
+        </div>
+        <div class="info">
+          <div class="info_header">
+            {{v.productName}}
+            <span>{{v.productPinkage}}</span>
+          </div>
+          <div class="info_fot clearfix">
+            <span class="mall">{{v.productFrom}} | {{v.productTime}}</span>
+            <span class="icon">
+              <i class="icon-comment"></i>
+              {{v.productComCount.replace("有","").replace("人评论","")}}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+  
+  {{/each}}
+  
+  </script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/moneyctrl.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买-凑单品</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+
+  <div class="money_header">
+    <div class="money_left">
+      <a href="index.html" class="icon-back"></a>
+    </div>
+    <div class="money_title">
+      <h4>凑单品</h4>
+    </div>
+    <div class="money_right">
+      <a href="javascript:;" class="icon-app"></a>
+    </div>
+  </div>
+
+
+
+  <div class="gsproduct_list">
+    <div class="list_header">
+      <div class="title">
+        <ul>
+          <li class="title_jd">
+            <a href="javascript:;"><span>京东</span>
+              <i></i>
+            </a>
+          </li>
+          <li class="second_hb">
+            <a href="javascript:;"><span>华北</span> 
+              <i></i>
+            </a>
+          </li>
+          <li class="three_price">
+            <a href="javascript:;"><span>全部价格</span>
+              <i></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="bcj_search">
+        <div class="icon-search">
+        </div>
+      </div>
+
+      <div class="pobox shop">
+        <ul>
+          <!-- ====坑==== -->
+        </ul>
+      </div>
+      <div class="pobox area">
+        <ul>
+
+          <!-- ====坑==== -->
+
+
+        </ul>
+      </div>
+      <div class="pobox price">
+        <ul>
+          <li class="on">
+            <a href="gsproduct.html">全部价格</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <div class="list_banner">
+      <ul class="clearfix">
+       
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+
+  <script type="text/html" id="tpl">
+{{each result v i }}
+
+
+  <li data-shopid="{{v.shopId}}"><a href="javascript:;">{{v.shopName}}</a></li>
+  
+
+{{/each}}
+</script>
+
+
+
+  <script type="text/html" id="tpl2">
+
+  {{each result v i }}
+
+
+  <li data-areaid="{{v.areaId}}"><a href="javascript:;">{{v.areaName}}</a></li>
+
+  {{/each}}
+
+</script>
+
+<script type="text/html" id="tpl3">
+{{each result v i }}
+  <li>
+    <a href="#">
+      <div class="price">
+        <img src="{{v.productImg}}" alt="">
+      </div>
+      <div class="title">{{v.productName}}</div>
+      <div class="other clearfix">
+        <div class="price_two">{{v.productPrice}}</div>
+        <div class="btn">去凑单</div>
+      </div>
+    </a>
+  </li>
+{{/each}}
+
+
+</script>
+
+
+
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/gsproduct.js"></script>
+</body>
+
+</html>

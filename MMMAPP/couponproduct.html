@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买-优惠</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+
+  <div class="money_header">
+    <div class="money_left">
+      <a href="index.html" class="icon-back"></a>
+    </div>
+    <div class="money_title">
+      <h4>商品优惠卷</h4>
+    </div>
+    <div class="money_right">
+      <a href="javascript:;" class="icon-app"></a>
+    </div>
+  </div>
+
+
+  <div class="coupon_info">
+      --点餐前出示手机中的优惠券，即可享受优惠--
+  </div>
+
+  <div class="coupon_product">
+    <ul class="clearfix">
+      <!-- ====坑=== -->
+    </ul>
+    <a href="#" id="gotop" class="gotop"></a>
+
+  </div>
+
+  
+
+
+
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+<div class="mask">
+  <div class="mask_banner">
+    <ul class="clearfix">
+      <li><a href="#"><img src="images/1.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/5.jpg" alt=""></a></li>
+      <li><a href="#"><img src="images/6.jpg" alt=""></a></li>
+    </ul>
+    <div class="arrow">
+      <span class="arrow-left">&lt;</span>
+      <span class="arrow-right">&gt;</span>
+    </div>
+  
+    <!-- <ol>
+      <li class="now"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol> -->
+  </div>
+</div>
+
+
+ <script type="text/html" id="tpl">
+
+{{each result v i }}
+
+<li>
+    <a href="javascript:;"
+        title=" 两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券">
+  
+    <div class="coupon_img">
+     <%- v.couponProductImg%>
+    </div>
+    <div class="coupon_banner">
+      <div class="info_top">
+          <h3>{{v.couponProductName}}
+          </h3>
+          <h2>{{v.couponProductPrice}}</h2>
+      </div>
+      <div class="info_time">{{v.couponProductTime}}</div>
+    </div>
+    </a>
+
+</li>
+
+{{/each}}
+
+
+</script>
+
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/couponproduct.js"></script>
+  <script src="js/common/animate.js"></script>
+  <script src="js/lunbotu.js"></script>
+</body>
+
+</html>

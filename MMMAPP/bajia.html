@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no ,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>买买买-商品详情页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bajia.css">
+  <script src="js/flexible.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/header_logo.png" alt="">
+      </a>
+    </div>
+    <div class="appDown">
+      <a href="javascript:;" title="手机APP下载">
+        <img src="images/header_app.png" alt="手机APP下载">
+      </a>
+    </div>
+  </header>
+
+  <!-- 搜索框 -->
+  <div class="mm_search">
+    <form class="search">
+      <input type="search" placeholder="请输入你想要购买的商品">
+      <input type="button" value="搜索">
+
+    </form>
+  </div>
+
+  <!-- 面包屑 -->
+
+  <div class="list_nav">
+    <!-- ====坑===== -->
+
+  </div>
+
+  <!-- 商品详情 -->
+  <div class="bajia_add">
+
+  </div>
+
+  <div class="bajia_evalue">
+    <p>网友评价</p>
+  </div>
+  <div class="bajia_list">
+    <ul>
+      <!-- ====坑=== -->
+    </ul>
+    <div class="product_bar">
+      <a href="javascript:;">查看更多评价</a>
+    </div>
+  </div>
+
+  
+  <!-- 底部 -->
+  <div class="mm_footer">
+    <div class="footer_header">
+      <a href="javascript:;">登录</a>
+      <a href="javascript:;">注册</a>
+      <a href="#" class="footer_top_icon" style="border: 0; width: 40%;">
+        <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">返回顶部
+      </a>
+    </div>
+    <div class="footer_fot">
+      <p>
+        <a href="javascript:;" class="fot">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+  <script type="text/html" id="tpl">
+  {{each result v i}}
+  <div class="bajia_product">
+      <div data-info="{{v.productName}}" class="product_title">{{v.productName}}</div>
+      <div class="product_img">
+        {{@ v.productImg}}
+      </div>
+      <div class="product_collect">
+        <a href="javascript:;">
+          <img src="http://www.zuyushop.com/wap/images/sc.jpg" width="39" height="39" alt="">
+        </a>
+      </div>
+    </div>
+  
+    <div class="bajia_tab">
+      <ul>
+        <li class="first">
+          <a href="#">比价购买</a>
+        </li>
+        <li class="second">
+          <a href="#">产品参数</a>
+        </li>
+        <li>
+          <a href="#">评价(2322)</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="bajia_info clearfix">
+
+       
+      <!-- <span class="bajia_img">
+        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" width="16" width="16" alt="">
+      </span> -->
+      <!-- <span class="bajia_jd">
+        <a href="#">京东商城</a>
+      </span>
+      <span class="bajia_go">
+        <a href="#">去购买</a>
+      </span>
+      <span class="bajia_pirce">￥1999.00</span> -->
+
+      <%- v.bjShop%>
+  
+    </div>
+    <div class="bajia_news">
+      * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+    </div>
+  {{ /each}}
+</script>
+
+  <script type="text/html" id="tpl2">
+{{each result v i}}
+  <li>
+      <div class="clearfix">
+        <span class="pull-left">{{v.comName}}</span>
+        <span class="pull-right">{{v.comTime}}</span>
+      </div>
+      <div class="clearfix">
+        <span class="pull-right"> {{v.comFrom}} </span>
+      </div>
+      <div class="com-content">
+       {{v.comContent}}
+        </div>
+    </li>
+{{/each}}
+</script>
+
+  <script type="text/html" id="tpl3">
+{{each result v i}}
+  <a href="index.html">首页</a>
+  >
+  <a href="productlist.html?categoryid={{v.categoryId}}&amp;category={{v.category}}&amp;pageid=1">{{v.category}}</a>
+  >
+  <a href="javascript:;" class="text">乐视TV(Letv)S50</a>
+  >
+  <a href="#" class="select">筛选</a>
+{{/each}}
+</script>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="js/bajia.js"></script>
+</body>
+
+</html>
